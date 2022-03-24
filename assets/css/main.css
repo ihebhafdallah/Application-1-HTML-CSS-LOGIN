@@ -1,0 +1,125 @@
+/* Fonts Tajwal */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* Roots V1.0 */
+:root {
+    --gris-color: #f3f0f3;
+    --orange-color: #e8636b;
+    --pink-color: #e56082;
+    --gris-color-nodark: #99999b;
+    --gris-color-dark: #716e71;
+    --font-light: 400;
+    --font-bold: 700;
+}
+
+* {
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: var(--gris-color);
+}
+
+/* Colors Classes */
+.gris-color {
+    color: var(--gris-color);
+}
+
+.oragne-color {
+    color: var(--orange-color);
+}
+
+.pink-color {
+    color: var(--pink-color);
+}
+
+.gris-color-nodark {
+    color: var(--gris-color-nodark);
+}
+
+.gris-color-dark {
+    color: var(--gris-color-dark);
+}
+
+/* Fonts Weight: Classes */
+.font-light {
+    font-weight: var(--font-light);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+/* Login Style */
+.login .socila-media a {
+    color: var(--gris-color-nodark);
+    transition: 1s;
+}
+
+.login .socila-media a:hover {
+    color: var(--orange-color);
+    transition: 1s;
+}
+
+.login .left-side {
+    background-color: #fff;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.login .left-side input[type=submit],
+input[type=text],
+input[type=password] {
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--gris-color);
+}
+
+.login .left-side input[type=password]:focus,
+input[type=text]:focus {
+    border: 1px solid var(--gris-color-nodark) !important;
+    outline: none;
+}
+
+.login .left-side input[type=submit] {
+    background-color: var(--gris-color-nodark);
+    color: #fff;
+    transition: 1s;
+}
+
+.login .left-side input[type=submit]:hover {
+    background-color: var(--orange-color);
+    transition: 1s;
+}
+
+.login .right-side {
+    background-image: linear-gradient(var(--orange-color), var(--pink-color));
+    border-radius: 0px 15px 15px 0px;
+}
+
+.login .right-side .btn-sign-up {
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    transition: 1s;
+}
+
+.login .right-side .btn-sign-up:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: var(--gris-color-nodark);
+    transition: 1s;
+}
+
+@media only screen and (max-width: 767px) {
+    .login .left-side {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .login .right-side {
+        border-radius: 0px 0px 15px 15px;
+    }
+}
